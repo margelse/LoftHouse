@@ -1,0 +1,51 @@
+.form {
+}
+.form__input {
+    width: 255px;
+    height: 50px;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: $white;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.2s;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+
+    &:focus {
+        background-color: rgb(255, 255, 255, 0.25);
+        transition: 0.2s;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+.form__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+
+    @media (max-width: 999px) {
+        justify-content: start;
+        text-align: left;
+    }
+}
+.form__btn {
+    line-height: 27px;
+    font-weight: bold;
+
+    width: 255px;
+    height: 50px;
+    background-color: $accent;
+    
+    transition: 0.2s;
+
+    &:hover {
+        font-weight: 400;
+        transition: 0.2s;
+    }
+}

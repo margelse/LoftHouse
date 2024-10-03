@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 180px;
+    padding-top: 60px;
+    padding-bottom: 51px;
+    background-color: $footer-bg;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px 30px;
+    }
+}
+.footer__logo {
+    margin-top: -9px;
+}
+.footer__info {
+}
+.footer__nav {
+
+}
+.footer__social-network {
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+}
+.social-network__link {
+}

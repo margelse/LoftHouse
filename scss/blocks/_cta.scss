@@ -1,0 +1,38 @@
+.cta {
+    padding: 180px 0;
+
+    @media (max-width: 999px) {
+        padding: 100px 0;
+    }
+
+    background:
+    linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), 
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../image/cta/cta-bg.jpg"), #C4C4C4;
+
+}
+.cta__title {
+    margin-bottom: 17px;
+}
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @media (max-width: 999px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.cta__text {
+    line-height: 1.5;
+}
+.cta__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
+}

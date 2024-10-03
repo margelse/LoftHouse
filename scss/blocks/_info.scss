@@ -1,0 +1,42 @@
+.header__info {
+    display: flex;
+    justify-content: center;
+    gap: 98px;
+
+    @media screen and (max-width: 999px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+.info {
+    position: relative;
+    font-size: 18px;
+    padding-left: 35px;
+
+    &--map::before, &--phone::before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 999px) {
+            transform: translate(25%, -10%);
+        }
+    }
+
+    &--map::before {
+        background-image: url("../image/header/point-icon.svg");
+    }
+
+    &--phone::before {
+        background-image: url("../image/header/tel-icon.svg");
+    }
+
+    @media screen and (max-width: 999px) {
+        font-size: 14px;   
+    }
+}
